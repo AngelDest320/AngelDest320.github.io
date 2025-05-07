@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider de Marcas</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+        .slider {
+            width: 80%;
+            overflow: hidden;
+            position: relative;
+            margin: 20px auto;
+        }
+
+        .slider-track {
+            display: flex;
+            width: 400%;
+            animation: slide 10s infinite linear;
+        }
+
+        .slide {
+            width: 25%;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            margin: 5px;
+        }
+
+        .slide img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .slide p {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-25%); }
+            50% { transform: translateX(-50%); }
+            75% { transform: translateX(-75%); }
+            100% { transform: translateX(0); }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="slider">
+        <div class="slider-track">
+            <div class="slide">
+                <img src="blog.jpg" alt="Bobstrap">
+                <p>bootstrap</p>
+            </div>
+            <div class="slide">
+                <img src="marvel.jpg" alt="Marvel">
+                <p>Marvel</p>
+            </div>
+            <div class="slide">
+                <img src="fonts.png" alt="Bobstrap">
+                <p>Google Fonts</p>
+            </div>
+            <div class="slide">
+                <img src="wiki.jpg" alt="Marvel">
+                <p> Wikipedia</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

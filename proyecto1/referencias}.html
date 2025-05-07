@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider de Marcas</title>
+    <style>
+        .slider {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slider-track {
+            display: flex;
+            width: 200%;
+            animation: slide 10s infinite linear;
+        }
+
+        .slide {
+            width: 50%;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(-50%); }
+            100% { transform: translateX(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <div class="slider-track">
+            <div class="slide">Bobstrap</div>
+            <div class="slide">Marvel</div>
+            <div class="slide">Bobstrap</div>
+            <div class="slide">Marvel</div>
+        </div>
+    </div>
+</body>
+</html>
