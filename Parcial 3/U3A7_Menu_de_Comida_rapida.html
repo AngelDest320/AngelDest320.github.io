@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+      <title>Unidad 3 | Actividad 5</title>
+      <Link rel="icon"type="image/x-icon"herf="favicon.ico">
+      <meta charset="utf-8">
+      <meta name="autor"contedent="Alvarado Rodriguez Angel Baruk">
+      <meta name="Fecha"contedent="Jueves 08 de Mayo de 2025">
+      <meta name="Descricion"contedent="Etiqueta formulario">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    </head>
+    <body>
+      <form class="form-horizontal" name="frmControles">
+        <fieldset>
+        
+        <!-- Form Name -->
+        <legend>Form Name</legend>
+        
+        <!-- Multiple Radios -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="radioOpciones">Elegir Un Valor</label>
+          <div class="col-md-4">
+          <div class="radio">
+            <label for="radioOpciones-0">
+              <input type="radio" name="radioOpciones" id="radioOpciones-0" value="99" checked="checked">
+              Combo pequeño
+            </label>
+          </div>
+          <div class="radio">
+            <label for="radioOpciones-1">
+              <input type="radio" name="radioOpciones" id="radioOpciones-1" value="129">
+              Combo Mediano
+            </label>
+          </div>
+          <div class="radio">
+            <label for="radioOpciones-2">
+              <input type="radio" name="radioOpciones" id="radioOpciones-2" value="159">
+              Combo Grande
+            </label>
+          </div>
+          </div>
+        </div>
+        
+        <!-- Multiple Checkboxes -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="checkOpciones">Elegir Complementos</label>
+          <div class="col-md-4">
+          <div class="checkbox">
+            <label for="checkOpciones-0">
+              <input type="checkbox" name="checkOpciones" id="checkOpciones-0" value="12">
+              Queso
+            </label>
+          </div>
+          <div class="checkbox">
+            <label for="checkOpciones-1">
+              <input type="checkbox" name="checkOpciones" id="checkOpciones-1" value="15">
+              Jamón
+            </label>
+          </div>
+          <div class="checkbox">
+            <label for="checkOpciones-2">
+              <input type="checkbox" name="checkOpciones" id="checkOpciones-2" value="27">
+              Champiñón
+            </label>
+          </div>
+          <div class="checkbox">
+            <label for="checkOpciones-3">
+              <input type="checkbox" name="checkOpciones" id="checkOpciones-3" value="10">
+              Verdura
+            </label>
+          </div>
+          </div>
+        </div>
+        
+        <!-- Select Basic -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="selectBasic">Elige el Tambaño</label>
+          <div class="col-md-4">
+            <select id="selectBasic" name="selectBasic" class="form-control">
+              <option value="99">Combo Grande</option>
+              <option value="129">Combo Mediano</option>
+              <option value="159">Combo Chico</option>
+            </select>
+          </div>
+        </div>
+        
+        <!-- Select Multiple -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="selectMultiple">Elige ingredientes</label>
+          <div class="col-md-4">
+            <select id="selectMultiple" name="selectMultiple" class="form-control" multiple="multiple">
+              <option value="1">Queso</option>
+              <option value="2">Pepperoni</option>
+              <option value="3">Papas</option>
+              <option value="4">Jamón</option>
+            </select>
+          </div>
+        </div>
+        <!--Otro controles-->
+        <div class="form-group">
+          <div class="col-md-8">
+            <label>Archivo::</label><input type="file" id="varFile"><br>
+            <label>Color::</label><input type="color" id="varFile"><br>
+            <label>Fecha::</label><input type="date" id="varFile"><br>
+            <label>Hora::</label><input type="time" id="varFile"><br>
+            <label>Semana::</label><input type="week" id="varFile"><br>
+            <label>Mes::</label><input type="month" id="varFile"><br>
+          </div>
+        </div>
+        <!-- Button (Double) -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="button1id">Double Button</label>
+          <div class="col-md-8">
+            <input type="submit" id="btnEnviar" name="btnEnviar" class="btn btn-primary">
+            <input type="reset" id="btnBorrar" name="btnBorrar" class="btn btn-info">
+          </div>
+        </div>
+        
+        </fieldset>
+        </form>
+        
+    </body>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+      <title>Unidad 3 | Actividad 5</title>
+      <Link rel="icon"type="image/x-icon"herf="favicon.ico">
+      <meta charset="utf-8">
+      <meta name="autor"contedent="Alvarado Rodriguez Angel Baruk">
+      <meta name="Fecha"contedent="Jueves 08 de Mayo de 2025">
+      <meta name="Descricion"contedent="Etiqueta formulario">
+    <style>
+    p {color : limegreen; background-color: navy; border: crimson 2px dashead;}
+    </style>
+      <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script>
+  function funcionClick(){
+    document.getElementById("varParrafo").innerHTML += "Hola con Click!!!<br>";
+  }
+  function funcionDoble(){
+    document.getElementById("varParrafo").innerHTML += "Hola con doble Click!!!<br>";
+  }
+  function funcionValidar(){alert("Bienvenido a mi sitio web...");}
+  function funcionOver(){document.getElementById("varParrafo").style.backgroundColor = "Black";}
+  function funcionOut(){document.getElementById("varParrafo").style.backgroundColor = "Navy";}
+  </script>
+    </head>
+    <body onload="funcionValidar">
+      <h1>Unidad 3 | Actividad 06 :: Tema (JavaScript)</h1>
+      <h3>Presione el boton para ejecutar el codigo</h3>
+
+      <button onclick="funcionClick()" ondblclick="funcionDoble()">Accion</button>
+      <p id="varParrafo" onmouseover="funcionOver()" onmouseout="funcionOut()"></p>
+      <fieldset>
+        <legend>Seleciona un color</legend>
+        <button ondblclick="cambiaColor">Color</button>
+         <input type="color">
+      </fieldset>
+    </body>

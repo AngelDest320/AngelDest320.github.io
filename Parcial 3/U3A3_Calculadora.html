@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+      <title>Unidad 3 | Actividad 1</title>
+      <Link rel="icon"type="image/x-icon"herf="favicon.ico">
+      <meta charset="utf-8">
+      <meta name="autor"contedent="Alvarado Rodriguez Angel Baruk">
+      <meta name="Fecha"contedent="Miercoles 19 de gebrero de 2025">
+      <meta name="Descricion"contedent="Hola mundo java scrit">
+    </head>
+    <body>
+      <h1>Unidad 3 | Actividad 03 :: Tema(JavaScrit)</h1>
+      <script>
+        let opc = window.prompt("Elige una de las siguientes opciones:\n 1.Sumar\n 2.Restar\n 3.Multiplicar\n 4.Dividir");
+        let val_1 = Number(window.prompt("¿Cual es el primer operado?"));
+        let val_2 = Number(window.prompt("¿Cual es el segundo operado?"));
+        switch(opc){
+          case "1":
+            document.write("<h3>Operacion Suma</h3>");
+            document.write("<code>" + val_1+ "+" + val_2 + "=" + (val_1 + val_2) + "</code>");
+          break;
+
+          case "2":
+          document.write("<h3>Operacion Suma</h3>");
+          document.write("<code>" + val_1+ "-" + val_2 + "=" + (val_1 + val_2) + "</code>");
+          break;
+
+          case "3":
+          document.write("<h3>Operacion Suma</h3>");
+          document.write("<code>" + val_1+ "x" + val_2 + "=" + (val_1 * val_2) + "</code>");
+          break;
+
+          case "4":
+          document.write("<h3>Operacion Suma</h3>");
+          document.write("<code>" + val_1+ "/" + val_2 + "=" + (val_1 / val_2) + "</code>");
+          break;
+        }
+        /*Menu de Opciones(prompt)
+        Elige una de las siguientes Funciones:
+        1.Sumar
+        2.Restar
+        3.Multiplicar
+        4.Dividir
+        */
+      </script>
+    </body>
+</html>

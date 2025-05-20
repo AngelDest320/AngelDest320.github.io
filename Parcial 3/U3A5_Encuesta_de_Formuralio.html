@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+      <title>Unidad 3 | Actividad 5</title>
+      <Link rel="icon"type="image/x-icon"herf="favicon.ico">
+      <meta charset="utf-8">
+      <meta name="autor"contedent="Alvarado Rodriguez Angel Baruk">
+      <meta name="Fecha"contedent="Jueves 08 de Mayo de 2025">
+      <meta name="Descricion"contedent="Etiqueta formulario">
+
+      <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script>
+  function resumenForm(){
+
+    //obtener acceso ol formulario
+  let varFor = document.forms["frmRegistro"];
+  //obtener acceso a controles
+  let varCorreo = varForm.elements["txtCorreo"];
+  varCadena +="\n - Nombre Usuario:"+varCorreo.value;
+
+  let varClave = varForm.elements["txtClave"];
+  varCadena +="\n - Nombre Usuario:"+varClave.value;
+
+  let varTelefono = varForm.elements["txtTelefono"];
+  varCadena +="\n - Nombre Usuario:"+varTelefono.value;
+
+  let varNombre = varForm.elements["txtNombre"];
+  varCadena +="\n - Nombre Usuario:"+varNombre.value;
+
+  let varMensaje = varForm.elements["txtMesage"];
+  varCadena +="\n - Nombre Usuario:"+varMesage.value;
+
+  alert(varCadena);
+  }
+  
+</script>
+    </head>
+    <body>
+      <h1>Unidad 3 | Actividad 5 :: Tema(Formulario)</h1>
+      <form onsubmit="resumenForm()" class="form-horizontal" name="frmRegistro" action="#" method="post">
+        <fieldset>
+        
+        <!-- Form Name -->
+        <legend>Registro de Usuario</legend>
+        
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="textinput">Nombre</label>  
+          <div class="col-md-4">
+          <input id="textNombre" name="textNombre" type="text" placeholder="Jose Diaz" class="form-control input-md">
+          <span class="help-block">Escribe tu Nombre completo</span>  
+          </div>
+        </div>
+        
+        <!-- Password input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="passClave">Contraseña</label>
+          <div class="col-md-4">
+            <input id="txtClave" name="txtClave" type="password" placeholder="" class="form-control input-md">
+            <span class="help-block">Debe de ser almenos 8 caracteres (unicamente utilizar letras y digitos)</span>
+          </div>
+        </div>
+        
+        <!-- Prepended text-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="prependedtext">Telefono</label>
+          <div class="col-md-4">
+            <div class="input-group">
+              <span class="input-group-addon">+52</span>
+              <input id="textTelefono" name="textTelefono" class="form-control" placeholder="(123) 456 7890" type="text">
+            </div>
+            
+          </div>
+        </div>
+        
+        <!-- Appended Input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="txtCorreo">Correo</label>
+          <div class="col-md-5">
+            <div class="input-group">
+              <input id="txtCorreo" name="txtCorreo" class="form-control" placeholder="Ejemplo" type="text">
+              <span class="input-group-addon">@upslp.edu.mx</span>
+            </div>
+            
+          </div>
+        </div>
+        <!-- Textarea -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="textmensage">Mensaje</label>
+          <div class="col-md-4">                     
+            <textarea class="form-control" id="textmensage" name="textmensage">Escribe Un mensaje</textarea>
+          </div>
+        </div>
+        
+        <!-- Button -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="btnEnviar"></label>
+          <div class="col-md-4">
+            <button id="btnEnviar" name="btnEnviar" class="btn btn-primary">Enviar</button>
+          </div>
+        </div>
+        
+        </fieldset>
+        </form>
+    </body>
+</html>
