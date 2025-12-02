@@ -1,0 +1,263 @@
+/* ----- BARRA INSTITUCIONAL ----- */
+.barra-institucional {
+
+  border-bottom: 4px solid #0b6120; /* verde institucional */
+  background-color: #fff;
+
+}
+
+.barra-institucional img {
+  
+  max-height: 60px;
+  width: auto;
+
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  
+  .barra-institucional img {
+    
+    max-height: 50px;
+  
+  }
+
+}
+
+/* Barra verde institucional */
+.nav-verde {
+
+  background-color: #28a745;  /* mismo tono que bg-success */
+
+}
+
+/* Hover */
+.nav-verde .nav-link:hover {
+
+  background-color: #28a745;  /* mismo tono que bg-success */
+  border-radius: 4px;
+
+}
+
+/* cuando alguien navega con teclado (Tab), se ve claramente qué opción está seleccionada. */
+.nav-verde .nav-link:focus {
+
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+
+}
+
+/* Hace el icono de hamburguesa totalmente blanco y visible */
+.navbar-dark .navbar-toggler-icon {
+
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='3' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  opacity: 1; /* sin transparencia */
+
+}
+
+/* Sombra elegante bajo la barra */
+.shadow-nav {
+
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.25);
+
+}
+
+/* Logo pequeño */
+.logo-nav {
+
+  width: 48px;
+  height: auto;
+  transition: transform 0.25s ease, filter 0.25s ease;
+
+}
+
+/* Efecto hover: ligero crecimiento (como +2px) */
+.logo-nav:hover {
+
+  transform: scale(1.08);   /* Aprox +2 px visual */
+  filter: brightness(1.15); /* opcional: se ve más vivo */
+  
+}
+
+/* Hover de los links */
+.nav-verde .nav-link:hover {
+
+  background-color: rgba(255, 255, 255, 0.12);
+  border-radius: 4px;
+
+}
+
+/* Opcional: resaltar la pestaña activa */
+.nav-verde .nav-item.active .nav-link {
+
+  font-weight: bold;
+  border-bottom: 2px solid #ffffff;
+
+}
+
+/* Tamaño del tarjetón */
+.tarjeta-inscripcion {
+  width: 28rem;
+  margin: 0 auto; /* centra la tarjeta */
+  border-radius: 12px;
+  overflow: hidden;
+
+}
+
+/* “Visor” donde se ve la imagen completa */
+.visor-img {
+
+  width: 100%;
+  height: 370px;       
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  overflow: hidden;
+
+}
+
+.visor-img img {
+
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* NO recorta */
+
+}
+
+.carrusel-inscripciones {
+
+  position: relative;
+
+}
+
+/* Controles: arriba de Bootstrap */
+.carrusel-inscripciones .carousel-control-prev,
+.carrusel-inscripciones .carousel-control-next {
+
+  width: 56px;
+  height: 56px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  opacity: 1;
+
+  position: absolute;
+  top: 50%;
+  bottom: auto;              /* anula el bottom: 0 de Bootstrap */
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.carrusel-inscripciones__control:hover {
+
+  opacity: 0.9;
+
+}
+
+/* Icono oscuro sobre fondo blanco */
+.carrusel-inscripciones__icon {
+
+  filter: invert(1);
+  
+}
+
+/* Botón verde institucional */
+.btn-verde {
+
+  background-color: #28a745;  /* mismo tono que bg-success */
+  border-color: #28a745;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 10px 20px;
+
+}
+
+/* Hover accesible */
+.btn-verde:hover, .btn-verde:focus {
+
+  background-color: #0b6120;  /* un verde un poco más oscuro para hover */
+  border-color: #0b6120;
+  color: #fff;
+
+}
+
+.cronograma-pdf {
+
+  width: 100%;
+  height: 600px;
+  border: none;
+
+}
+
+.divider-inscripciones {
+
+  border: 0;
+  height: 4px;
+  background: linear-gradient(to right, #0b6120, #00a64f, #0b6120); 
+  border-radius: 5px;
+  margin: 30px 0;
+
+}
+
+.icono-pdf {
+
+  width: 60px;
+  display: block;
+  margin: 0 auto 15px;
+  opacity: 0.85;
+  transition: 0.2s ease;
+
+}
+
+.icono-pdf:hover {
+
+  opacity: 1;
+  transform: scale(1.05);
+
+}
+
+.tramite-card {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #0b6120;
+  font-weight: 600;
+  font-size: 17px;
+  border: 2px solid #0b6120;
+  transition: 0.25s ease;
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.15);
+
+}
+
+.tramite-card:hover {
+
+  transform: translateY(-4px);
+  background: #0b6120;
+  color: #ffffff;
+  box-shadow: 0px 6px 14px rgba(0,0,0,0.25);
+
+}
+
+.tramite-icon {
+
+  width: 70px;
+  height: auto;
+  margin-bottom: 12px;
+  transition: 0.25s ease;
+
+}
+
+.tramite-card:hover .tramite-icon {
+
+  transform: scale(1.5);
+  filter: none;
+
+}

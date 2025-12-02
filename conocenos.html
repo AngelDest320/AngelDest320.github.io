@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conócenos - Escuela Preparatoria ARC</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .barra-institucional img {
+            height: 60px;
+            margin: 5px;
+        }
+
+        h2 {
+            color: #0b7207;
+            border-left: 6px solid #0b7207;
+            padding-left: 10px;
+        }
+
+        .valor-item {
+            background: #e8f5e9;
+            padding: 10px;
+            border-radius: 6px;
+            margin: 5px 0;
+            border-left: 5px solid #0b7207;
+        }
+
+        footer {
+            background: #0b7207;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .btn-facebook {
+            background:#120772;
+            color:white;
+            font-size:20px;
+            font-weight:bold;
+            padding:8px 16px;
+            border:none;
+            border-radius:6px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- BARRA INSTITUCIONAL (MISMA QUE INICIO) -->
+    <header class="barra-institucional py-2">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center">
+            <img src="SEP.png" alt="SEP">
+            <img src="Gobierno del Estado.png" alt="Gobierno del Estado">
+            <img src="SEER.png" alt="SEER">
+            <img src="SEGE.png" alt="SEGE">
+        </div>
+    </header>
+
+    <!-- NAVBAR (MISMA QUE INICIO) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Portada.html">ARC</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="Inicio.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+                            Conócenos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="conocenos.html">Conócenos</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="Incripciones.html" role="button" data-bs-toggle="dropdown">
+                            Inscripciones
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Incripciones.html">Inscripciones</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO -->
+    <div class="container mt-4">
+
+        <!-- Galería -->
+        <div class="row text-center my-4">
+            <div class="col-md-6">
+                <img src="SEER.png" class="img-fluid" width="300">
+            </div>
+            <div class="col-md-6">
+                <img src="SEP.png" class="img-fluid" width="300">
+            </div>
+        </div>
+
+        <!-- Buscador -->
+        <div class="text-center mb-4">
+            <input class="form-control w-50 mx-auto" list="buscador" placeholder="🔍 Buscar...">
+            <datalist id="buscador">
+                <option value="Usuarios">
+                <option value="Administrativos">
+                <option value="Reportes">
+                <option value="Maestros">
+                <option value="Configuración">
+            </datalist>
+        </div>
+
+        <!-- Historia -->
+        <section class="p-4 bg-white rounded shadow-sm mb-4">
+            <a href="nuestra-historia.html" class="text-decoration-none">
+                <h2>Nuestra Historia</h2>
+            </a>
+        </section>
+
+        <!-- Misión -->
+        <section class="p-4 bg-white rounded shadow-sm mb-4">
+            <h2>Misión</h2>
+            <p>
+                Formar estudiantes competentes con disciplina, conocimientos, habilidades y 
+                destrezas que les permitan incorporarse a la educación superior y a la sociedad con éxito.
+            </p>
+        </section>
+
+        <!-- Visión -->
+        <section class="p-4 bg-white rounded shadow-sm mb-4">
+            <h2>Visión</h2>
+            <p>
+                Ser un bachillerato de calidad egresando estudiantes con un alto nivel académico basado en la disciplina, 
+                el conocimiento; garantizando ser competente, logrando su inserción al nivel superior y
+                en los distintos ámbitos de la sociedad.
+            </p>
+        </section>
+
+        <!-- Valores -->
+        <section class="p-4 bg-white rounded shadow-sm mb-4">
+            <h2>Valores</h2>
+            <ul class="list-unstyled">
+                <li class="valor-item">Respeto</li>
+                <li class="valor-item">Responsabilidad</li>
+                <li class="valor-item">Solidaridad</li>
+                <li class="valor-item">Honestidad</li>
+                <li class="valor-item">Trabajo en equipo</li>
+            </ul>
+        </section>
+
+        <!-- Administrativos -->
+        <section class="p-4 bg-white rounded shadow-sm mb-4">
+            <a href="directorio.html" class="text-decoration-none">
+                <h2>Administrativos</h2>
+            </a>
+        </section>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <a href="https://www.facebook.com/profile.php?id=100064042571967">
+            <button class="btn-facebook">f</button>
+        </a>
+        <br><br>
+        © 2025 Escuela Preparatoria "Lic. Antonio Rocha Cordero"
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+

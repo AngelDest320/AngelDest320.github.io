@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Inscripciones </title>
+
+  <!-- Bootstrap 4 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+  <!-- Tu CSS -->
+  <link rel="stylesheet" href="Incripciones.css">
+
+  <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+
+  <!-- Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+</head>
+
+<body>
+
+  <!-- BARRA INSTITUCIONAL -->
+  <header class="barra-institucional py-2">
+    
+    <div class="container d-flex flex-wrap justify-content-between align-items-center">
+
+      <!-- SEP -->
+      <div class="col-auto my-1">
+
+        <img src="SEP.png" alt="SEP">
+
+      </div>
+
+      <!-- Gobierno del Estado -->
+      <div class="col-auto my-1">
+
+        <img src="Gobierno del Estado.png" alt="Gobierno del Estado">
+
+      </div>
+
+      <!-- SEER -->
+      <div class="col-auto my-1">
+
+        <img src="SEER.png" alt="SEER">
+
+      </div>
+
+      <!-- SEGE -->
+      <div class="col-auto my-1">
+
+        <img src="SEGE.png" alt="SEGE">
+      
+        </div>
+
+    </div>
+
+  </header>
+
+  <!-- BARRA DE NAVEGACIÓN PRINCIPAL -->
+<nav class="navbar navbar-expand-lg navbar-dark nav-verde">
+  <div class="container">
+
+    <!-- Título o Logo pequeño -->
+    <!-- Logo pequeño + texto -->
+    <a class="navbar-brand d-flex align-items-center" href="inicio.html"><img src="institucion.png" alt="Logo ARC" class="logo-nav mr-2"></a>
+
+    <!-- Botón para menú móvil -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuARC" aria-controls="menuARC" aria-expanded="false" aria-label="Menú de navegación">
+      
+      <span class="navbar-toggler-icon"></span>
+    
+    </button>
+
+    <!-- Items del menú -->
+    <div class="collapse navbar-collapse" id="menuARC">
+      
+      <ul class="navbar-nav nav-centrado">
+
+
+          <!-- Con esto aparecera la palabra Inicio, con el link directo a esa pagina web -->
+        <li class="nav-item">
+
+          <a class="nav-link" href="inicio.html">Inicio</a>
+
+        </li>
+
+        <!-- Con esto aparecera la palabra Conocenos, con el link directo a esa pagina web -->
+        <li class="nav-item">
+
+          <a class="nav-link" href="conocenos.html"> Conócenos </a>
+
+        </li>
+
+        <!-- Con esto aparecera la palabra Inscripciones (pagina actual), con el link directo a esa pagina web -->
+        <li class="nav-item active">
+
+          <a class="nav-link" href="inscripciones.html"> Inscripciones <span class="sr-only">(actual)</span></a>
+
+        </li>
+
+        <!-- Con esto aparecera la palabra Noticias, con el link directo a esa pagina web -->
+        <li class="nav-item">
+
+          <a class="nav-link" href="Megas_Noticias.html"> Noticias </a>
+
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+</nav>
+
+  <div class="container mt-4">
+
+    <h1>Inscripciones</h1>
+    <p> Todo lo que necesitas para inscribirte: fechas, documentos, trámites en línea y guía paso a paso para nuevo ingreso y semestres posteriores. </p>
+  
+    </div>
+
+  <!-- CARRUSEL TARJETÓN -->
+  <div id="carruselInscripciones" class="carousel slide carrusel-inscripciones" data-ride="carousel">
+
+    <!-- Indicadores -->
+    <ol class="carousel-indicators">
+
+      <li data-target="#carruselInscripciones" data-slide-to="0" class="active"></li>
+      <li data-target="#carruselInscripciones" data-slide-to="1"></li>
+      <li data-target="#carruselInscripciones" data-slide-to="2"></li>
+
+    </ol>
+
+    <!-- Slides -->
+    <div class="carousel-inner">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="card tarjeta-inscripcion">
+          <div class="visor-img">
+
+            <img src="ARC Cartel.jpg" class="d-block w-100 carrusel-inscripciones__img" alt="Imagen 1">
+          
+            </div>
+
+        </div>
+
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="card tarjeta-inscripcion">
+          <div class="visor-img">
+
+            <img src="Generaciön 18-19.jpg" class="d-block w-100 carrusel-inscripciones__img" alt="Imagen 2">
+          
+        </div>
+        
+    </div>
+      
+</div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="card tarjeta-inscripcion">
+          <div class="visor-img">
+
+            <img src="fachada.png" class="d-block w-100 carrusel-inscripciones__img" alt="Imagen 3">
+          
+                </div>
+        
+            </div>
+      
+        </div>
+
+          <!-- Slide 4 -->
+      <div class="carousel-item">
+        <div class="card tarjeta-inscripcion">
+          <div class="visor-img">
+
+            <img src="inscripciones1.jpg" class="d-block w-100 carrusel-inscripciones__img" alt="Imagen 3">
+          
+                </div>
+        
+            </div>
+      
+        </div>
+
+          <!-- Slide 5 -->
+      <div class="carousel-item">
+        <div class="card tarjeta-inscripcion">
+          <div class="visor-img">
+
+            <img src="inscripciones2.jpg" class="d-block w-100 carrusel-inscripciones__img" alt="Imagen 3">
+          
+                </div>
+        
+            </div>
+      
+        </div>
+
+          <!-- Slide 6 -->
+      <div class="carousel-item">
+        <div class="card tarjeta-inscripcion">
+          <div class="visor-img">
+
+            <img src="inscripciones3.jpg" class="d-block w-100 carrusel-inscripciones__img" alt="Imagen 3">
+          
+                </div>
+        
+            </div>
+      
+        </div>
+
+          <!-- Slide 7 -->
+      <div class="carousel-item">
+        <div class="card tarjeta-inscripcion">
+          <div class="visor-img">
+
+            <img src="inscripciones4.jpg" class="d-block w-100 carrusel-inscripciones__img" alt="Imagen 3">
+          
+                </div>
+        
+            </div>
+      
+        </div>
+
+          <!-- Slide 8 -->
+      <div class="carousel-item">
+        <div class="card tarjeta-inscripcion">
+          <div class="visor-img">
+
+            <img src="inscripciones5.jpg" class="d-block w-100 carrusel-inscripciones__img" alt="Imagen 3">
+          
+                </div>
+        
+            </div>
+      
+        </div>
+
+    </div>
+
+    <!-- Flecha izquierda -->
+    <a class="carousel-control-prev carrusel-inscripciones__control" href="#carruselInscripciones" role="button" data-slide="prev">
+
+      <span class="carousel-control-prev-icon carrusel-inscripciones__icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    
+    </a>
+
+    <!-- Flecha derecha -->
+    <a class="carousel-control-next carrusel-inscripciones__control" href="#carruselInscripciones" role="button" data-slide="next">
+
+      <span class="carousel-control-next-icon carrusel-inscripciones__icon" aria-hidden="true"></span>
+      <span class="sr-only">Siguiente</span>
+    
+    </a>
+
+  </div>
+
+  <!-- Documentacion oficial en formato PDF para descargar -->>
+
+  <div class="container my-5">
+
+    <img src="icono-pdf.png" alt="Ícono PDF" class="icono-pdf">
+
+  <h2>Cronograma oficial en PDF</h2>
+  <p class="text-muted"> En el siguiente documento encontrarás el cronograma completo del semestre agosto – diciembre 2025, incluyendo evaluaciones, reuniones de padres de familia, pagos, actividades culturales y fechas oficiales de suspensión de labores.</p>
+
+  <a href="Cronograma Ago-Dic25.pdf" class="btn btn-verde mb-3" target="_blank" aria-label="Descargar cronograma completo de actividades en PDF"> Descargar cronograma (PDF) </a>
+
+</div>
+
+<hr class="divider-inscripciones">
+
+  <!-- Tabla para cronograma de actividades -->>
+
+  <div class="container my-5">
+
+  <h2 class="mb-3">Cronograma de inscripciones y actividades relacionadas</h2>
+  <p class="text-muted">Resumen de las fechas más importantes para aspirantes y alumnos inscritos.</p>
+
+  <div class="table-responsive">
+
+    <table class="table table-striped table-hover table-sm">
+
+      <caption class="sr-only">Cronograma de actividades relacionadas con inscripciones semestre agosto–diciembre 2025.</caption>
+
+      <thead class="thead-light">
+
+        <tr>
+
+          <th scope="col">Evento</th>
+          <th scope="col">Descripción</th>
+          <th scope="col">Fecha</th>
+          <th scope="col">Notas</th>
+
+        </tr>
+
+      </thead>
+
+      <tbody>
+
+        <tr>
+
+          <th scope="row">Capacitación de plataforma</th>
+
+          <td>Sesión para alumnos de nuevo ingreso sobre el uso de la plataforma digital.</td>
+          <td>6 de agosto de 2025</td>
+          <td>Esta actividad sera obligatoria para todos los alumn(a)s de nuevo ingreso.</td>
+
+        </tr>
+
+        <tr>
+
+          <th scope="row">Examen de diagnóstico EIDEMS</th>
+
+          <td>Evaluación diagnóstica para alumnos de nuevo ingreso.</td>
+          <td>Fecha pendiente</td>
+          <td>La fecha se comunicará por los canales oficiales.</td>
+
+        </tr>
+
+        <tr>
+
+          <th scope="row">Inicio de promoción NMS</th>
+
+          <td>Promoción de las escuelas de Nivel Medio Superior.</td>
+          <td>10 de noviembre de 2025</td>
+          <td>Difusión de información para aspirantes.</td>
+        
+        </tr>
+
+        <tr>
+
+          <th scope="row">Requisitos de inscripción</th>
+
+          <td>Fecha límite para reunir y entregar documentación de inscripción.</td>
+          <td>9 de diciembre de 2025</td>
+          <td>Ver documento oficial para lista completa de requisitos.</td>
+        
+        </tr>
+
+        <tr>
+
+          <th scope="row">Inscripciones semestres I, II, III y IV</th>
+
+          <td>Registro de alumnos de todos los semestres.</td>
+          <td>12 de diciembre de 2025</td>
+          <td>Aplica para alumnos de semestres I, II, III y IV.</td>
+
+        </tr>
+
+        <tr>
+
+          <th scope="row">Vacaciones</th>
+
+          <td>Periodo vacacional entre semestres.</td>
+          <td>Del 22 de diciembre de 2025 al 6 de enero de 2026</td>
+          <td>Durante este periodo no habran actividades academicas.</td>
+        
+        </tr>
+
+        <tr>
+
+          <th scope="row">Inicio de clases</th>
+
+          <td>Inicio de actividades del siguiente semestre.</td>
+          <td>12 de enero de 2026</td>
+          <td>Alumnos deben presentarse en su horario habitual.</td>
+
+        </tr>
+
+      </tbody>
+
+    </table>
+
+  </div>
+
+  <hr class="divider-inscripciones">
+
+  <!-- Descripcion de requisitos para proceso de inscripcion -->
+
+  <section class="container my-5" id="requisitos">
+
+  <h2> Requisitos de inscripción </h2>
+  <p class="text-muted">La documentación debe entregarse completa en la fecha indicada.</p>
+
+  <div class="table-responsive">
+
+    <table class="table table-striped table-sm">
+
+      <thead class="thead-light">
+
+        <tr>
+
+          <th scope="col"> Documento </th>
+          <th scope="col"> Requisito </th>
+          <th scope="col"> Especificaciones </th>
+
+        </tr>
+
+      </thead>
+
+      <tbody>
+
+        <tr>
+
+          <th scope="row"> Acta de nacimiento </th>
+          <td> copia. </td>
+          <td> Sin enmendaduras. </td>
+
+        </tr>
+
+        <tr>
+
+          <th scope="row">CURP</th>
+          <td> Impresión actualizada. </td>
+          <td> Formato oficial. </td>
+
+        </tr>
+
+        <tr>
+
+          <th scope="row"> Certificado de secundaria </th>
+          <td> Original y copia. </td>
+          <td> O constancia de estudios si aún no se entrega. </td>
+
+        </tr>
+
+        <tr>
+
+          <th scope="row">Comprobante de domicilio</th>
+          <td>Recibo de agua, luz, teléfono, etc.</td>
+          <td>Vigencia no mayor a 3 meses.</td>
+
+        </tr>
+
+        <tr>
+
+          <th scope="row">Fotografías</th>
+          <td> 3 fotos tamaño infantil a color. </td>
+          <td>Fondo blanco y sin lentes. Con cabello corto o peinado, recogido en mujeres. </td>
+
+        </tr>
+
+      </tbody>
+
+    </table>
+
+  </div>
+
+</section>
+
+<hr class="divider-inscripciones">
+
+<!-- Diferenciamos el sistema escolar con otros bachilleres -->
+
+<section class="container my-5" id="porque-elegirnos">
+
+  <h2>¿Por qué estudiar aquí?</h2>
+
+  <div class="row">
+
+    <div class="col-md-4 mb-3">
+
+      <div class="card h-100">
+
+        <div class="card-body">
+
+          <h3 class="h5 card-title">Bachillerato único</h3>
+          <p class="card-text">Plan de estudios general que te prepara para cualquier carrera universitaria.</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="col-md-4 mb-3">
+
+      <div class="card h-100">
+
+        <div class="card-body">
+
+          <h3 class="h5 card-title">Becas Benito Juárez</h3>
+          <p class="card-text">Apoyo para el registro y seguimiento de becas federales para estudiantes.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="col-md-4 mb-3">
+
+      <div class="card h-100">
+
+        <div class="card-body">
+
+          <h3 class="h5 card-title">Plataforma digital</h3>
+          <p class="card-text">Trabajo en plataforma digital para tareas, avisos y seguimiento académico.</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="col-md-4 mb-3">
+
+      <div class="card h-100">
+
+        <div class="card-body">
+
+          <h3 class="h5 card-title">Personal profesional</h3>
+          <p class="card-text">Docentes con experiencia y acompañamiento académico cercano.</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="col-md-4 mb-3">
+
+      <div class="card h-100">
+
+        <div class="card-body">
+
+          <h3 class="h5 card-title">Validación de materias</h3>
+          <p class="card-text">Posibilidad de validar materias cursadas en otros subsistemas, según normativa.</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="col-md-4 mb-3">
+
+      <div class="card h-100">
+
+        <div class="card-body">
+
+          <h3 class="h5 card-title"> Ambiente escolar digno y responsable </h3>
+          <p class="card-text">Actividades culturales, deportivas y formación integral para las y los estudiantes.</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<hr class="divider-inscripciones">
+
+<!-- Tutorial paso a pasa para la inscripcion -->
+
+<section class="container my-5" id="pasos-inscripcion">
+  <h2>Pasos para inscribirte</h2>
+
+  <ol class="list-group list-group-numbered">
+
+    <li class="list-group-item">Solicita información y revisa la convocatoria de inscripciones.</li>
+    <li class="list-group-item">Reúne todos los <a href="#requisitos">requisitos de inscripción</a> (documentos personales y académicos).</li>
+    <li class="list-group-item">Acude a la escuela en la fecha indicada para entregar documentos y realizar tu registro.</li>
+    <li class="list-group-item">Presenta el examen diagnóstico y el de ingreso en la fecha asignada.</li>
+    <li class="list-group-item">Confirma tu inscripción en control escolar y recibe tu horario de clases.</li>
+
+  </ol>
+
+</section>
+
+<hr class="divider-inscripciones">
+
+<!-- Seccion para ayudar al estudiante a obtener documentos necesarios para su inscripcion -->
+<div class="container my-5">
+
+  <h2 class="text-center mb-4"> ¿Te hace falta algun documento?</h2>
+    <p class="text-muted"> No te preocupes! aqui estan las paginas necesarias para tramitar tu inscripcion sin mayor problema.</p>
+
+  <div class="row justify-content-center">
+
+    <!-- Acta de nacimiento -->
+    <div class="col-md-3 col-sm-6 mb-3">
+
+      <a href="https://www.gob.mx/ActaNacimiento/" target="_blank" class="tramite-card"><img src="acta_nacimiento.png" alt="Tramitar acta de nacimiento" class="tramite-icon"><span>Acta de nacimiento</span></a>
+    
+      </div>
+
+    <!-- CURP -->
+    <div class="col-md-3 col-sm-6 mb-3">
+
+      <a href="https://www.gob.mx/curp/" target="_blank" class="tramite-card"><img src="CURP.png" alt="Consultar CURP" class="tramite-icon"><span>CURP</span></a>
+
+    </div>
+
+    <!-- RFC -->
+    <div class="col-md-3 col-sm-6 mb-3">
+      
+      <a href="https://www.sat.gob.mx/aplicacion/operacion/53027/genera-tu-rfc-persona-fisica" target="_blank" class="tramite-card"><img src="RFC.png" alt="Generar RFC" class="tramite-icon"><span>RFC</span></a>
+
+    </div>
+
+    <!-- Constancia educativa / Becas -->
+    <div class="col-md-3 col-sm-6 mb-3">
+
+      <a href="https://subes.becasbenitojuarez.gob.mx/" target="_blank" class="tramite-card"><img src="constancia_estudios.png" alt="Constancia educativa para trámite de beca" class="tramite-icon"><span>Constancia educativa</span></a>
+    
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Comunicacion extra -->
+ 
+
+</div>
+
+  <!-- Bootstrap 4 JS (OJO: ya no es 5, es 4.6.2) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
